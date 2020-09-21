@@ -60,7 +60,9 @@ ul, li{
 	justify-content: center;
 }
 
-
+.header {
+    min-height:130px;
+}
 
 .header ul{
     display: inline-flex;
@@ -85,10 +87,8 @@ ul, li{
 }
 
 
-.main .search_form{
-    margin-top:127px;
-}
-.main .search_form label p{
+
+.main .search_form h1{
     flex-basis:50%;
     font-family: Poppins;
     font-style: normal;
@@ -96,7 +96,7 @@ ul, li{
     font-size: 43px;
     line-height: 56px;
 }
-.main .search_form label span{
+.main .search_form h1 span{
 
     font-family: Poppins;
     font-style: normal;
@@ -116,12 +116,21 @@ ul, li{
     box-sizing: border-box;
     box-shadow: 0px 2px 16px #ECECEC;
     border-radius: 5px;
+	position:relative;
+	padding-left:40px;
 }
-.main .search_form img{
-    margin-left:10px ;
-    margin-right: 10px;
 
+.main .search_form .bar::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/magnifier.svg);
+    left: 10px;
+    background-size: contain;
 }
+
+
 .main .search_form .bar .city{
     height: 66px;
     width: 100%;
