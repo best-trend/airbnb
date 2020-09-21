@@ -163,6 +163,15 @@ ul, li{
     height: 48px;
 }
 
+
+
+@media (max-width: 991px) {
+	.header ul{
+		display: block;
+	}
+}
+
+
 @media (min-width: 876px) {
 	.container {
 		max-width: 540px;
